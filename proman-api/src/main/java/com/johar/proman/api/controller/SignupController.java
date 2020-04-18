@@ -19,4 +19,3 @@ public class SignupController {
         return new ResponseEntity(HttpStatus.OK);
     }
 }
-}
