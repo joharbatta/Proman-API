@@ -16,7 +16,7 @@ public class SwaggerConfiguration {
     public Docket swagger()
     {
         return new Docket(DocumentationType.SWAGGER_2)
-                .select().apis(RequestHandlerSelectors.basePackage("com.upgrad.proman.api.controller"))
+                .select().apis(RequestHandlerSelectors.basePackage("com.johar.proman.api.controller"))
                 .paths(PathSelectors.any()).build();
     }
 }

@@ -1,1 +1,6 @@
+com\johar\proman\service\dao\UserDao.class
 com\johar\proman\service\ServiceConfiguration.class
+com\johar\proman\service\business\SignupBusinessService.class
+com\johar\proman\service\entity\UserEntity.class
+com\johar\proman\service\entity\RoleEntity.class
+com\johar\proman\service\entity\UserAuthTokenEntity.class

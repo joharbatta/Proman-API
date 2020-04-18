@@ -20,7 +20,9 @@ public enum UserStatusType {
   
   INACTIVE("INACTIVE"),
   
-  LOCKED("LOCKED");
+  LOCKED("LOCKED"),
+  
+  DELETED("DELETED");
 
   private String value;
 
