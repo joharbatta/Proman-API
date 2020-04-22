@@ -16,14 +16,9 @@ public class PromanApiApplication {
 }
 
 
-
-
 //editor.swagger.io
 // mvn clean install -Psetup -DskipTests
 //http://localhost:3030/api/swagger-ui.html
-
-
-
 
 //client           api           server
 

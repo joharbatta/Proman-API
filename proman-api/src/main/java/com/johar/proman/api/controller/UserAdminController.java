@@ -32,6 +32,5 @@ public class UserAdminController {
 
         return new ResponseEntity<UserDetailsResponse>(userDetailsResponse, HttpStatus.OK);
 
-
     }
 }
