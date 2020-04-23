@@ -53,11 +53,20 @@ public class UserDao {
         entityManager.persist(userAuthTokenEntity);
         return userAuthTokenEntity;
     }
-    public void updateUser(final UserEntity updatedUserEntity){
+    public void updateUser(final UserEntity updatedUserEntity)
+    {
         entityManager.merge(updatedUserEntity);
     }
 
+//authorize
+    public UserAuthTokenEntity getUserAuthToken(final String accessToken){
+        try {
+            return entityManager.createNamedQuery("userAuthTokenByAccessToken",
+                    UserAuthTokenEntity.class).setParameter("accessToken", accessToken).getSingleResult();
+        } catch (NoResultException nre){
+            return null;
+        }
 
-
+    }
 
 }
