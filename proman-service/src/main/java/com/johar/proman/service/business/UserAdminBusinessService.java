@@ -21,3 +21,5 @@ public class UserAdminBusinessService {
         return userEntity;
     }
 }
+//throw for raise exception
+//throws just to let other person know that these method can generate this type of exception
