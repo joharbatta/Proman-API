@@ -1,5 +1,6 @@
 package com.johar.proman.service.dao;
 
+import com.johar.proman.service.entity.UserAuthTokenEntity;
 import com.johar.proman.service.entity.UserEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -36,6 +37,27 @@ public class UserDao {
             return null;
         }
     }
+
+    //search by email or username
+    public UserEntity getUserByEmail(final String email)
+    {
+        try {
+            return entityManager.createNamedQuery("userByEmail", UserEntity.class).setParameter("email", email)
+                    .getSingleResult();
+        } catch (NoResultException nre) {
+            return null;
+        }
+    }
+// databse ch user auth token save horea
+    public UserAuthTokenEntity createAuthToken(final UserAuthTokenEntity userAuthTokenEntity){
+        entityManager.persist(userAuthTokenEntity);
+        return userAuthTokenEntity;
+    }
+    public void updateUser(final UserEntity updatedUserEntity){
+        entityManager.merge(updatedUserEntity);
+    }
+
+
 
 
 }

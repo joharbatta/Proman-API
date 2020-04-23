@@ -26,6 +26,7 @@ com\johar\proman\api\model\RoleRequest.class
 com\johar\proman\api\model\UserOperationRequest$OpEnum.class
 com\johar\proman\api\controller\UserAdminController.class
 io\swagger\api\NotFoundException.class
+com\johar\proman\api\controller\AuthenticationController.class
 com\johar\proman\api\model\UserSummaryType.class
 io\swagger\RFC3339DateFormat.class
 io\swagger\api\ApiException.class
